@@ -24,7 +24,7 @@ class MenuResource extends Resource
 
     public static function getNavigationLabel(): string
     {
-        return 'Filament(v5) Menu Builder';
+        return 'Menus';
     }
 
     public static function getNavigationGroup(): ?string
