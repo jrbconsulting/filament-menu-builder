@@ -2,11 +2,11 @@
 
 @if(is_null($menu))
     @php
-        $menu = \YourVendor\FilamentMenuBuilder\Models\Menu::getTree();
+        $menu = \Vendor\FilamentMenuBuilder\Models\Menu::getTree();
     @endphp
 @endif
 
-<ul {{ $attributes->merge(['class' => 'menu']) }}>
+<ul {{ $attributes->merge(['class' => 'menu']) >
     @foreach($menu as $menuItem)
         @if($menuItem->is_active)
             <li class="menu-item">

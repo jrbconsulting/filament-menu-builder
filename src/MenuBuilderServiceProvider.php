@@ -2,10 +2,10 @@
 
 namespace Vendor\FilamentMenuBuilder;
 
-use Filament\Support\Assets\Asset;
+use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
 use Illuminate\Support\ServiceProvider;
-use YourVendor\FilamentMenuBuilder\Resources\MenuResource;
+use Vendor\FilamentMenuBuilder\Resources\MenuResource;
 
 class MenuBuilderServiceProvider extends ServiceProvider
 {
@@ -28,22 +28,8 @@ class MenuBuilderServiceProvider extends ServiceProvider
             __DIR__.'/../database/migrations/' => database_path('migrations'),
         ], 'filament-menu-builder-migrations');
 
-        $this->publishes([
-            __DIR__.'/../resources/views/' => resource_path('views/vendor/filament-menu-builder'),
-        ], 'filament-menu-builder-views');
-
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'filament-menu-builder');
-
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-
-        $this->registerResources();
-    }
-
-    protected function registerResources(): void
-    {
-        // Register Filament resource
-        app('filament')->register([
-            MenuResource::class,
+        FilamentAsset::register([
+            Css::make('filament-menu-builder-css', __DIR__.'/../resources/dist/filament-menu-builder.css'),
         ]);
     }
 }

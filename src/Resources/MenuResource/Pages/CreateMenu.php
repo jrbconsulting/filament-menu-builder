@@ -3,7 +3,7 @@
 namespace Vendor\FilamentMenuBuilder\Resources\MenuResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
-use YourVendor\FilamentMenuBuilder\Resources\MenuResource;
+use Vendor\FilamentMenuBuilder\Resources\MenuResource;
 
 class CreateMenu extends CreateRecord
 {

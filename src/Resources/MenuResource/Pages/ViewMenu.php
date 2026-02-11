@@ -4,7 +4,7 @@ namespace Vendor\FilamentMenuBuilder\Resources\MenuResource\Pages;
 
 use Filament\Actions;
 use Filament\Resources\Pages\ViewRecord;
-use YourVendor\FilamentMenuBuilder\Resources\MenuResource;
+use Vendor\FilamentMenuBuilder\Resources\MenuResource;
 
 class ViewMenu extends ViewRecord
 {
