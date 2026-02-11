@@ -49,7 +49,7 @@
 ## 🚀 Installation
 
 ```bash
-composer require vendor/filament-menu-builder
+composer require jrbconsulting/filament-menu-builder
 ```
 
 ### 1. Publish the configuration

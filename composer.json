@@ -1,9 +1,9 @@
 {
-    "name": "vendor/filament-menu-builder",
+    "name": "jrbconsulting/filament-menu-builder",
     "description": "Filament(v5) Menu Builder - A reusable hierarchical menu builder for Filament v5",
     "type": "library",
     "license": "AGPL-3.0-or-later",
-    "homepage": "https://github.com/yourvendor/filament-menu-builder",
+    "homepage": "https://github.com/jrbconsulting/filament-menu-builder",
     "keywords": ["filament", "menu", "navigation", "laravel", "filament-v5", "hierarchical"],
     "require": {
         "php": "^8.1",
